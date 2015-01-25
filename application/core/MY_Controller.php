@@ -20,6 +20,7 @@ class Application extends CI_Controller {
     function __construct()
     {
 	parent::__construct();
+	$this->load->library('parser');
 	$this->data = array();
 	$this->data['title'] = 'Demo Contact Manager';
     }
